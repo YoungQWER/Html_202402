@@ -91,3 +91,34 @@ let studentScore = {
 //     console.log(a+b)
 //  })(10,200);
  
+const person = {
+    name : {firstName: "길동" , lastName: "홍"},
+    age : 29,
+    address : "경기도"
+};
+
+// console.log(person.name.firstName);
+// console.log(person.name['firstName']);
+
+person.gender = "남";
+
+person.age = 59
+person.name.lastName="김";
+
+delete person.name;
+
+
+console.log(person)
+
+// person = {              const는 person = {}; 으로 변경 불가능
+//     age : 20
+// };
+
+let test = [10,20,30,40,50];
+
+console.log(test);
+test.unshift(60);        //배열의 맨 앞에 추가합니다.
+
+console.log(test);
+test.shift();            //배열의 맨 앞을 추출합니다.
+console.log(test);
